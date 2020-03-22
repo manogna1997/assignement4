@@ -1,0 +1,25 @@
+Chapter 5 
+
+- Chapter 5 starts of explaining about REST API, 
+- Different types of HTTP requests (GET, POST, PUT,DELETE) that are implemented in REST, Request and Response Objects IN REST
+- How to build REST API in Express and how to configure Express to allow request to access css,js file.
+- Other basic concent such has 
+   - error handling 
+   - url pattern for build Rest API are also explained.
+- The chapter also explain to different uses of  HTTP requests
+   - POST : Create/add a new data into backend
+   - Get : To retrieve data from backend
+   - PUT : Update data or else to add new date 
+   - Delete : for removing existing data in backend
+
+Graphql
+ - is a query language framework for CURD operation into a data source (inmemoey,mongodb,sql)
+ - its was developed by facebook in 2011 to avoid multiple rest calls for fetching data from different sources.
+ - some of the benefits that i observed
+    - easy implementation of client and server interaction 
+    - retrieving/add data can be exposed has REST API 
+    - Strong declaration using types in schema
+    - we can map relation in schemas and Graphql takes care of translating it into querries.
+    - More Flexibility using resolver to handle request and data manipulation
+- we learnt about Apollo server and client that expose Graphql has REST API and a client which React JS can use 
+to interact with Graphql by events such has mutation and querry.
