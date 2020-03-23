@@ -1,26 +1,8 @@
 {
-  "name": "assignement3",
+  "name": "assignement4",
   "version": "1.0.0",
-  "description": "assignment one submission for cs648",
-  "main": "server.js",
-  "nodemonConfig": {
-    "watch": [
-      "src",
-      "public",
-      "css",
-      "server"
-    ],
-    "ext": "jsx,css,html,js",
-    "ignore": [
-      "*.test.ts",
-      "dist/**",
-      "node_modules"
-    ],
-    "delay": "1",
-    "execMap": {
-      "jsx": "babel-node"
-    }
-  },
+  "description": "SDSU - CS 648 Assignment 3",
+  "main": "webpack.config.js",
   "scripts": {
     "webpack": "webpack --mode=development",
     "webpack:watch": "webpack --mode=development --watch",
@@ -31,19 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manogna1997/assignement3.git"
+    "url": "git+https://github.com/manogna1997/assignement4.git"
   },
-  "keywords": [
-    "manu",
-    "assignemnet1",
-    "cs648"
-  ],
-  "author": "Manogna Podishetty",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/manogna1997/assignement3/issues"
+    "url": "https://github.com/manogna1997/assignement4/issues"
   },
-  "homepage": "https://github.com/manogna1997/assignement3#readme",
+  "homepage": "https://github.com/manogna1997/assignement4#readme",
   "dependencies": {
     "@apollo/client": "^3.0.0-beta.38",
     "apollo-server": "^2.10.1",
@@ -53,6 +30,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
     "graphql": "^14.6.0",
+    "mongoose": "^5.9.5",
     "path": "^0.12.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

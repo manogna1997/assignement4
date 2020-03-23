@@ -8,8 +8,11 @@ var app = express();
 const bodyParser = require('body-parser');
 const { ApolloServer, gql } = require('apollo-server-express');
 const {typeDefs, resolvers}  = require('./schema.js')
-
+const dotenv = require('dotenv');
+const mongooseClient = require('./database.js');
+dotenv.config();
 /**
+ * mongodb+srv://manu:manu4@cluster0-5n8in.mongodb.net/test?retryWrites=true&w=majority
  * use all static files
  */
 app.use(cors())
@@ -38,4 +41,4 @@ server.applyMiddleware({ app , path: '/graphql' });
 /**
  * start server at port 3000
  */
-app.listen(3000);
+app.listen(process.env.API_SERVER_PORT);

@@ -34,9 +34,6 @@ export default function Inventory2(props) {
         refetch()
     };
 
-
-
-
     if (loading) {
         return <div>Loading still ....</div>
     } else {

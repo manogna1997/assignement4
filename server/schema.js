@@ -1,9 +1,9 @@
 const { gql } = require('apollo-server');
-
+const {Product} = require('./models/products.module.js');
 
 const typeDefs = gql`
   type Product  {
-    	id: Int
+        id: ID,
     	category: Category!
     	name: String!
     	price: Float
@@ -26,18 +26,17 @@ const typeDefs = gql`
 const products = [];
 // The resolvers
 const resolvers = {
-    Query: { products: () => products },
+    Query: { products: () => Product.find({}), },
     Mutation: {
         createProd(parent, args, ctx, info) {
-            const product = {
-                id: products.length + 1,
+            const product = new Product({
+                // id: products.length + 1,
                 name: args.name,
                 image: args.image,
                 price: args.price,
                 category: args.category
-            }
-            products.push(product)
-            return product
+            });
+            return  product.save();
         }
     }
 };
