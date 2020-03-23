@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const postSchema = new Schema({
     	category: String,
     	name: String,
-    	price:  { type: Number, set: function (v) { return Math.round(v) ;}},
+    	price:  Number,
     	image: String
 });
 

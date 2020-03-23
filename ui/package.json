@@ -4,13 +4,7 @@
   "description": "SDSU - CS 648 Assignment 3",
   "main": "webpack.config.js",
   "scripts": {
-    "install":"cd ui ; npm install ; cd ../ui ; npm install",
-    "ui:compile":"cd ui && npm run webpack",
-    "ui:start":"http-server ./ -a localhost -p 8000 -c-1",
-    "server:start":"cd server && nodemon --exec babel-node server.js",
-    "nodemon": "nodemon --exec babel-node server/server.js",
-    "start": "rm -rf dist && npm-run-all -p ui:compile ui:start server:start",
-    "start:watch": "npm run dev"
+    "webpack": "webpack --mode=development"
   },
   "repository": {
     "type": "git",

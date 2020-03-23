@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.jsx', // relative path
+  entry: './main.jsx', // relative path
   output: {
-    path: path.join(__dirname, 'dist'), // absolute path
+    path: path.join(__dirname,'../', 'dist'), // absolute path
     filename: 'main.js' // file name
   },
   module: {
